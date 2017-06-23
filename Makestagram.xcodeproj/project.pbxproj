@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600737201EFDE0BC0038BDEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007371F1EFDE0BC0038BDEB /* HomeViewController.swift */; };
+		600737221EFDE0CD0038BDEB /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600737211EFDE0CD0038BDEB /* FindFriendsViewController.swift */; };
 		601993701EFD76C4002DB9A6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019936F1EFD76C4002DB9A6 /* UserService.swift */; };
 		601993731EFD94A4002DB9A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601993721EFD94A4002DB9A6 /* Constants.swift */; };
 		601993751EFD98B4002DB9A6 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601993741EFD98B4002DB9A6 /* Storyboard+Utility.swift */; };
 		60CA72C41EFC4B3E00A8F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA72C31EFC4B3E00A8F8D2 /* AppDelegate.swift */; };
 		60CA72CB1EFC4B3E00A8F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72CA1EFC4B3E00A8F8D2 /* Assets.xcassets */; };
-		60CA72D81EFC5B4A00A8F8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA72D71EFC5B4A00A8F8D2 /* ViewController.swift */; };
 		60CA72DB1EFC5B5400A8F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72D91EFC5B5400A8F8D2 /* LaunchScreen.storyboard */; };
 		60CA72DC1EFC5B5400A8F8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72DA1EFC5B5400A8F8D2 /* Main.storyboard */; };
 		60CA72E51EFC5CAB00A8F8D2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72E41EFC5CAB00A8F8D2 /* Login.storyboard */; };
@@ -26,13 +27,14 @@
 /* Begin PBXFileReference section */
 		1F5A937F0BE93B02C93AF9F5 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		455B7D8AEFAAAB5A026CE4BC /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6007371F1EFDE0BC0038BDEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		600737211EFDE0CD0038BDEB /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsViewController.swift; path = Controllers/FindFriendsViewController.swift; sourceTree = "<group>"; };
 		6019936F1EFD76C4002DB9A6 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		601993721EFD94A4002DB9A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
 		601993741EFD98B4002DB9A6 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		60CA72C01EFC4B3E00A8F8D2 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CA72C31EFC4B3E00A8F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60CA72CA1EFC4B3E00A8F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		60CA72D71EFC5B4A00A8F8D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		60CA72D91EFC5B5400A8F8D2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60CA72DA1EFC5B5400A8F8D2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		60CA72DE1EFC5B5E00A8F8D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
@@ -128,9 +130,10 @@
 		60CA72E31EFC5C4800A8F8D2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				60CA72D71EFC5B4A00A8F8D2 /* ViewController.swift */,
 				60CA72E61EFC5CE700A8F8D2 /* LoginViewController.swift */,
 				60CA72EF1EFC8F1800A8F8D2 /* CreateUsernameViewController.swift */,
+				6007371F1EFDE0BC0038BDEB /* HomeViewController.swift */,
+				600737211EFDE0CD0038BDEB /* FindFriendsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -289,8 +292,9 @@
 				60CA72ED1EFC84CD00A8F8D2 /* User.swift in Sources */,
 				60CA72E71EFC5CE700A8F8D2 /* LoginViewController.swift in Sources */,
 				601993701EFD76C4002DB9A6 /* UserService.swift in Sources */,
+				600737201EFDE0BC0038BDEB /* HomeViewController.swift in Sources */,
 				601993751EFD98B4002DB9A6 /* Storyboard+Utility.swift in Sources */,
-				60CA72D81EFC5B4A00A8F8D2 /* ViewController.swift in Sources */,
+				600737221EFDE0CD0038BDEB /* FindFriendsViewController.swift in Sources */,
 				601993731EFD94A4002DB9A6 /* Constants.swift in Sources */,
 				60CA72F01EFC8F1800A8F8D2 /* CreateUsernameViewController.swift in Sources */,
 				60CA72C41EFC4B3E00A8F8D2 /* AppDelegate.swift in Sources */,
