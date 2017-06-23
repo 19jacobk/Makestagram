@@ -24,6 +24,11 @@ extension UIStoryboard {
     }
     
     static func initialViewController (for type: MGType) -> UIViewController {
-        let storyboard = UIStoryboard(type: type)
+        let storyboard = UIStoryboard (type: type)
+        guard let initialViewController = storyboard.instantiateInitialViewController() else {
+            fatalError("Couldn't instantiate view controller for \(type.filename) storyboard.")
+        }
+        
+        return initialViewController
     }
 }
