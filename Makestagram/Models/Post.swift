@@ -28,6 +28,19 @@ class Post {
         self.creationDate = Date()
     }
     
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String: Any],
+            let imageURL = dict["image_url"] as? String,
+            let imageHeight = dict["image_height"] as? CGFloat,
+            let createdAgo = dict["created_at"] as? TimeInterval
+            else { return nil}
+        
+        self.key = snapshot.key
+        self.imageURL = imageURL
+        self.imageHeight = imageHeight
+        self.creationDate =  Date(timeIntervalSince1970: createdAgo)
+    }
+    
     static func create(forURLString urlString: String, aspectHeight: CGFloat) {
         let currentUser = User.current
         let post = Post(imageURL: urlString, imageHeight: aspectHeight)
