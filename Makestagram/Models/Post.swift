@@ -41,12 +41,4 @@ class Post {
         self.creationDate =  Date(timeIntervalSince1970: createdAgo)
     }
     
-    static func create(forURLString urlString: String, aspectHeight: CGFloat) {
-        let currentUser = User.current
-        let post = Post(imageURL: urlString, imageHeight: aspectHeight)
-        let dict = post.dictValue
-        
-        let postRef = Database.database().reference().child("posts").child(currentUser.uid).childByAutoId()
-        postRef.updateChildValues(dict)
-    }
 }
