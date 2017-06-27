@@ -33,12 +33,20 @@ class HomeViewController: UIViewController {
         tableView.separatorStyle = .none
     }
     
+    let timeStampFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        return dateFormatter
+    }()
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.section]
@@ -57,6 +65,7 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            cell.timeAgoLabel.text = timeStampFormatter.string(from: post.creationDate)
             
             return cell
         default:
