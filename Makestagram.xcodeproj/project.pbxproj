@@ -24,6 +24,7 @@
 		60CA72ED1EFC84CD00A8F8D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA72EC1EFC84CD00A8F8D2 /* User.swift */; };
 		60CA72F01EFC8F1800A8F8D2 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA72EF1EFC8F1800A8F8D2 /* CreateUsernameViewController.swift */; };
 		60E896F71F02EFBE00813BEF /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E896F61F02EFBE00813BEF /* PostActionCell.swift */; };
+		60E896F91F0316DB00813BEF /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E896F81F0316DB00813BEF /* LikeService.swift */; };
 		60F066061F017973005454C1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F066051F017973005454C1 /* MainTabBarController.swift */; };
 		60F066091F017DE2005454C1 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F066081F017DE1005454C1 /* MGPhotoHelper.swift */; };
 		60F0660C1F01A233005454C1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0660B1F01A233005454C1 /* StorageService.swift */; };
@@ -57,6 +58,7 @@
 		60CA72EC1EFC84CD00A8F8D2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		60CA72EF1EFC8F1800A8F8D2 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		60E896F61F02EFBE00813BEF /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
+		60E896F81F0316DB00813BEF /* LikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeService.swift; path = Services/LikeService.swift; sourceTree = "<group>"; };
 		60F066051F017973005454C1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Controllers/MainTabBarController.swift; sourceTree = "<group>"; };
 		60F066081F017DE1005454C1 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		60F0660B1F01A233005454C1 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageService.swift; path = Services/StorageService.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				6019936F1EFD76C4002DB9A6 /* UserService.swift */,
 				60F0660B1F01A233005454C1 /* StorageService.swift */,
 				60F0660D1F01A8D5005454C1 /* PostService.swift */,
+				60E896F81F0316DB00813BEF /* LikeService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				60F066061F017973005454C1 /* MainTabBarController.swift in Sources */,
 				601993701EFD76C4002DB9A6 /* UserService.swift in Sources */,
 				60E896F71F02EFBE00813BEF /* PostActionCell.swift in Sources */,
+				60E896F91F0316DB00813BEF /* LikeService.swift in Sources */,
 				60F066101F01AC99005454C1 /* Post.swift in Sources */,
 				6013D2641F02B712000CB070 /* PostImageCell.swift in Sources */,
 				60F066121F01B347005454C1 /* UIImage+Size.swift in Sources */,
