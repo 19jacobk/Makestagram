@@ -13,6 +13,7 @@ import Kingfisher
 class HomeViewController: UIViewController {
     
     var posts = [Post]()
+    let refreshControl = UIRefreshControl()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,9 +22,18 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configureTableView()
+        reloadTimeline()
         
-        UserService.posts(for: User.current) { (posts) in
+    }
+    
+    func reloadTimeline() {
+        UserService.timeline { (posts) in
             self.posts = posts
+            
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
+            
             self.tableView.reloadData()
         }
     }
@@ -31,6 +41,9 @@ class HomeViewController: UIViewController {
     func configureTableView() {
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
     
     let timeStampFormatter: DateFormatter = {
@@ -54,7 +67,8 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
-            cell.usernameLabel.text = User.current.username
+            cell.usernameLabel.text = post.poster.username
+            
             
             return cell
         case 1:
@@ -119,7 +133,7 @@ extension HomeViewController: PostActionCellDelegate {
             
             guard success else { return }
             
-            post.likeCount += !post.isLiked ? 1 : 1
+            post.likeCount += !post.isLiked ? 1 : -1
             post.isLiked = !post.isLiked
             
             guard let cell = self.tableView.cellForRow(at: indexPath) as? PostActionCell

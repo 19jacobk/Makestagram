@@ -29,7 +29,7 @@ class PostActionCell: UITableViewCell {
     }
     
     
-//    @IBAction func likeButtonTapped(_ sender: Any) {
-//        delegate?.didTapLikeButton(sender, on: self)
-//    }
+    @IBAction func likeButtonTapped(_ sender: UIButton) {
+        delegate?.didTapLikeButton(sender, on: self)
+    }
 }

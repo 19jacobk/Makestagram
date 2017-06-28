@@ -57,7 +57,7 @@ struct LikeService {
                 return success(false)
             }
             
-            let likeCountRef = Database.database().reference().child("posts").child(post.poster.uid).child(key).child("like_count")
+            let likeCountRef = Database.database().reference().child("postLikes").child(post.poster.uid).child(key).child("like_count")
             likeCountRef.runTransactionBlock({ (mutableData) -> TransactionResult in
                 let currentCount = mutableData.value as? Int ?? 0
                 
