@@ -19,7 +19,19 @@
 		603266C81F0558BC00624805 /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603266C71F0558BC00624805 /* DatabaseReference+Location.swift */; };
 		603266CA1F056F3500624805 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603266C91F056F3500624805 /* UITableView+Utility.swift */; };
 		603266CC1F0574FF00624805 /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603266CB1F0574FF00624805 /* MGPaginationHelper.swift */; };
+		603266D71F059FC500624805 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266CD1F059FC500624805 /* OpenSans-Bold.ttf */; };
+		603266D81F059FC500624805 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266CE1F059FC500624805 /* OpenSans-BoldItalic.ttf */; };
+		603266D91F059FC500624805 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266CF1F059FC500624805 /* OpenSans-ExtraBold.ttf */; };
+		603266DA1F059FC500624805 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D01F059FC500624805 /* OpenSans-ExtraBoldItalic.ttf */; };
+		603266DB1F059FC500624805 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D11F059FC500624805 /* OpenSans-Italic.ttf */; };
+		603266DC1F059FC500624805 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D21F059FC500624805 /* OpenSans-Light.ttf */; };
+		603266DD1F059FC500624805 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D31F059FC500624805 /* OpenSans-LightItalic.ttf */; };
+		603266DE1F059FC500624805 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D41F059FC500624805 /* OpenSans-Regular.ttf */; };
+		603266DF1F059FC500624805 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D51F059FC500624805 /* OpenSans-Semibold.ttf */; };
+		603266E01F059FC500624805 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603266D61F059FC500624805 /* OpenSans-SemiboldItalic.ttf */; };
 		6071B84B1F04140900D52DB0 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071B84A1F04140900D52DB0 /* FollowService.swift */; };
+		608B6B041F05BAF80056EB4A /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B6B031F05BAF80056EB4A /* UIColor+Utility.swift */; };
+		608B6B061F05C19F0056EB4A /* UIFont+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B6B051F05C19F0056EB4A /* UIFont+Utility.swift */; };
 		60CA72C41EFC4B3E00A8F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CA72C31EFC4B3E00A8F8D2 /* AppDelegate.swift */; };
 		60CA72CB1EFC4B3E00A8F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72CA1EFC4B3E00A8F8D2 /* Assets.xcassets */; };
 		60CA72DB1EFC5B5400A8F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CA72D91EFC5B5400A8F8D2 /* LaunchScreen.storyboard */; };
@@ -57,7 +69,19 @@
 		603266C71F0558BC00624805 /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DatabaseReference+Location.swift"; path = "Extensions/DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		603266C91F056F3500624805 /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Utility.swift"; path = "Extensions/UITableView+Utility.swift"; sourceTree = "<group>"; };
 		603266CB1F0574FF00624805 /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPaginationHelper.swift; path = Helpers/MGPaginationHelper.swift; sourceTree = "<group>"; };
+		603266CD1F059FC500624805 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		603266CE1F059FC500624805 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		603266CF1F059FC500624805 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		603266D01F059FC500624805 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		603266D11F059FC500624805 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		603266D21F059FC500624805 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		603266D31F059FC500624805 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		603266D41F059FC500624805 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		603266D51F059FC500624805 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		603266D61F059FC500624805 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		6071B84A1F04140900D52DB0 /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowService.swift; path = Services/FollowService.swift; sourceTree = "<group>"; };
+		608B6B031F05BAF80056EB4A /* UIColor+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Utility.swift"; path = "Extensions/UIColor+Utility.swift"; sourceTree = "<group>"; };
+		608B6B051F05C19F0056EB4A /* UIFont+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+Utility.swift"; path = "Extensions/UIFont+Utility.swift"; sourceTree = "<group>"; };
 		60CA72C01EFC4B3E00A8F8D2 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CA72C31EFC4B3E00A8F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60CA72CA1EFC4B3E00A8F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,8 +149,27 @@
 				60F066131F01B448005454C1 /* StorageReference+Post.swift */,
 				603266C71F0558BC00624805 /* DatabaseReference+Location.swift */,
 				603266C91F056F3500624805 /* UITableView+Utility.swift */,
+				608B6B031F05BAF80056EB4A /* UIColor+Utility.swift */,
+				608B6B051F05C19F0056EB4A /* UIFont+Utility.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		603266E11F059FC900624805 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				603266CD1F059FC500624805 /* OpenSans-Bold.ttf */,
+				603266CE1F059FC500624805 /* OpenSans-BoldItalic.ttf */,
+				603266CF1F059FC500624805 /* OpenSans-ExtraBold.ttf */,
+				603266D01F059FC500624805 /* OpenSans-ExtraBoldItalic.ttf */,
+				603266D11F059FC500624805 /* OpenSans-Italic.ttf */,
+				603266D21F059FC500624805 /* OpenSans-Light.ttf */,
+				603266D31F059FC500624805 /* OpenSans-LightItalic.ttf */,
+				603266D41F059FC500624805 /* OpenSans-Regular.ttf */,
+				603266D51F059FC500624805 /* OpenSans-Semibold.ttf */,
+				603266D61F059FC500624805 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = OpenSans;
 			sourceTree = "<group>";
 		};
 		60CA72B71EFC4B3E00A8F8D2 = {
@@ -167,6 +210,7 @@
 		60CA72E11EFC5C3300A8F8D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				603266E11F059FC900624805 /* OpenSans */,
 				60CA72D91EFC5B5400A8F8D2 /* LaunchScreen.storyboard */,
 				60CA72DE1EFC5B5E00A8F8D2 /* Info.plist */,
 				60CA72EA1EFC716900A8F8D2 /* GoogleService-Info.plist */,
@@ -296,13 +340,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603266DC1F059FC500624805 /* OpenSans-Light.ttf in Resources */,
 				60CA72DC1EFC5B5400A8F8D2 /* Main.storyboard in Resources */,
+				603266DD1F059FC500624805 /* OpenSans-LightItalic.ttf in Resources */,
 				60CA72CB1EFC4B3E00A8F8D2 /* Assets.xcassets in Resources */,
+				603266DF1F059FC500624805 /* OpenSans-Semibold.ttf in Resources */,
+				603266E01F059FC500624805 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				603266D71F059FC500624805 /* OpenSans-Bold.ttf in Resources */,
 				60CA72EB1EFC716900A8F8D2 /* GoogleService-Info.plist in Resources */,
 				603266C41F042A9B00624805 /* FindFriends.storyboard in Resources */,
 				60F066161F01BEE2005454C1 /* Home.storyboard in Resources */,
+				603266D81F059FC500624805 /* OpenSans-BoldItalic.ttf in Resources */,
 				60CA72E51EFC5CAB00A8F8D2 /* Login.storyboard in Resources */,
+				603266DE1F059FC500624805 /* OpenSans-Regular.ttf in Resources */,
 				60CA72DB1EFC5B5400A8F8D2 /* LaunchScreen.storyboard in Resources */,
+				603266DB1F059FC500624805 /* OpenSans-Italic.ttf in Resources */,
+				603266DA1F059FC500624805 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				603266D91F059FC500624805 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +417,7 @@
 			files = (
 				6071B84B1F04140900D52DB0 /* FollowService.swift in Sources */,
 				60CA72ED1EFC84CD00A8F8D2 /* User.swift in Sources */,
+				608B6B041F05BAF80056EB4A /* UIColor+Utility.swift in Sources */,
 				60F0660C1F01A233005454C1 /* StorageService.swift in Sources */,
 				60CA72E71EFC5CE700A8F8D2 /* LoginViewController.swift in Sources */,
 				603266CA1F056F3500624805 /* UITableView+Utility.swift in Sources */,
@@ -375,6 +430,7 @@
 				603266CC1F0574FF00624805 /* MGPaginationHelper.swift in Sources */,
 				603266C61F042CAE00624805 /* FindFriendsCell.swift in Sources */,
 				60F066121F01B347005454C1 /* UIImage+Size.swift in Sources */,
+				608B6B061F05C19F0056EB4A /* UIFont+Utility.swift in Sources */,
 				600737201EFDE0BC0038BDEB /* HomeViewController.swift in Sources */,
 				60F066091F017DE2005454C1 /* MGPhotoHelper.swift in Sources */,
 				601993751EFD98B4002DB9A6 /* Storyboard+Utility.swift in Sources */,

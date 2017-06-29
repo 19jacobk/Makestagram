@@ -18,7 +18,7 @@ protocol PostActionCellDelegate: class {
 class PostActionCell: UITableViewCell {
     
     weak var delegate: PostActionCellDelegate?
-    static let height: CGFloat = 46
+    static let height: CGFloat = 54
     
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeCountLabel: UILabel!
