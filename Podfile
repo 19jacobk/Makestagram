@@ -17,5 +17,9 @@ target 'Makestagram' do
 
   pod ‘FacebookCore’
   pod ‘FacebookLogin’
+  pod ‘FirebaseUI/Facebook’
+
+  pod ‘GoogleSignIn’
+  pod ‘FirebaseUI/Google’
 
 end
