@@ -12,6 +12,8 @@ import Kingfisher
 
 class HomeViewController: UIViewController {
     
+    let paginationHelper = MGPaginationHelper<Post>(serviceMethod: UserService.timeline)
+    
     var posts = [Post]()
     let refreshControl = UIRefreshControl()
     
@@ -27,7 +29,7 @@ class HomeViewController: UIViewController {
     }
     
     func reloadTimeline() {
-        UserService.timeline { (posts) in
+        self.paginationHelper.reloadData(completion: { [unowned self] (posts) in
             self.posts = posts
             
             if self.refreshControl.isRefreshing {
@@ -35,7 +37,7 @@ class HomeViewController: UIViewController {
             }
             
             self.tableView.reloadData()
-        }
+        })
     }
     
     func configureTableView() {
@@ -66,19 +68,19 @@ extension HomeViewController: UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
+            let cell : PostHeaderCell = tableView.dequeueReusableCell()
             cell.usernameLabel.text = post.poster.username
             
             
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell") as! PostImageCell
+            let cell : PostImageCell = tableView.dequeueReusableCell()
             let imageURL = URL(string: post.imageURL)
             cell.postImageView.kf.setImage(with: imageURL)
             
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            let cell : PostActionCell = tableView.dequeueReusableCell()
             cell.delegate = self
             configureCell(cell, with: post)
 
@@ -96,6 +98,18 @@ extension HomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.section >= posts.count - 1 {
+            paginationHelper.paginate(completion: { [unowned self] (posts) in
+                self.posts.append(contentsOf: posts)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
+        }
     }
     
 }

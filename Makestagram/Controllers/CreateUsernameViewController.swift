@@ -16,9 +16,8 @@ class CreateUsernameViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         nextButton.layer.cornerRadius = 6
+        super.viewDidLoad()
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {

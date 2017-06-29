@@ -23,7 +23,7 @@ class FindFriendsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        followButton.layer.borderColor = UIColor.lightGray.cgColor
+        followButton.layer.borderColor = UIColor.white.cgColor
         followButton.layer.borderWidth = 1
         followButton.layer.cornerRadius = 6
         followButton.clipsToBounds = true
